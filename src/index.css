@@ -1,0 +1,27 @@
+@import 'tailwindcss';
+
+@theme {
+    --color-page-bg: oklch(0.1536 0.0117 132.4096);
+    --color-page-fg: oklch(0.9876 0.0094 119.5729);
+    --color-surface-bg: oklch(0.2093 0.0188 131.5301);
+    --color-surface-fg: oklch(0.9482 0.0353 121.0003);
+    --color-surface-muted-bg: oklch(0.2764 0.0289 130.9091);
+    --color-surface-muted-fg: oklch(0.8472 0.0519 123.2483);
+    --color-primary-bg: oklch(0.82 0.19 110);
+    --color-primary-fg: oklch(0.18 0 0);
+    --color-secondary-bg: oklch(0.71 0.019 261);
+    --color-secondary-fg: oklch(0.18 0 0);
+    --color-accent-bg: oklch(0.904 0.250 131);
+    --color-accent-fg: oklch(0.18 0 0);
+    --color-success-color: oklch(0.63 0.15 150);
+    --color-success-fg: oklch(0.18 0 0);
+    --color-warning-color: oklch(0.66 0.17 55);
+    --color-warning-fg: oklch(0.18 0 0);
+    --color-danger-color: oklch(0.55 0.19 25);
+    --color-danger-fg: oklch(1 0 0);
+}
+
+body {
+    background: var(--color-page-bg);
+    color: var(--color-page-fg);
+}
