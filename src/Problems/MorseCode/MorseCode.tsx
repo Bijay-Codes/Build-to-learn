@@ -50,7 +50,7 @@ const morseCodeMap: Record<string, string> = {
     '+': '.-.-.',
     '@': '.--.-.'
 }
-export function MorseCode() {
+export default function MorseCode() {
     const [text, setText] = useState<string>('');
     const [converted, setConverted] = useState<(string | number)[]>([]);
     const [copied, setCopied] = useState<true | false | 'fail'>(false);
@@ -90,7 +90,7 @@ export function MorseCode() {
             });
     }
     return (
-        <div className="flex flex-col gap-6 items-start">
+        <div className="flex flex-col gap-6 items-start p-6">
             <h1 className="text-6xl font-extrabold pb-6">Text to Morse code!!</h1>
             <label htmlFor="text-input" className="text-2xl font-bold">Enter text</label>
             <input
