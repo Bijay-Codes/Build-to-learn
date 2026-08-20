@@ -1,6 +1,6 @@
 import MorseCode from "./Problems/MorseCode/MorseCode";
-import Pets from "./Problems/TerminalPet/terminalpet";
 import Intro from "./pages/Intro";
+import { SvgAnim } from "./Problems/SVGPractice/SVG";
 import { Navbar } from "./components/Navbar";
 import { Problems } from "./components/RenderProblems";
 import { pagePaths } from "./pages/Pages";
@@ -15,7 +15,7 @@ function App() {
           <Route path={pagePaths.home} element={<Problems />} />
           <Route path={pagePaths.intro} element={<Intro />} />
           <Route path={pagePaths.morseCodeTranslator} element={<MorseCode />} />
-          <Route path={pagePaths.terminalPets} element={<Pets />} />
+          <Route path={pagePaths.svgpractice} element={<SvgAnim />} />
         </Routes>
       </section>
     </BrowserRouter >
