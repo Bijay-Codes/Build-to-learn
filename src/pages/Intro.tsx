@@ -7,6 +7,8 @@ export default function Intro() {
                 The problem i face is
                 every small thing i build to learn something is either lying around here and there with no organization
                 or just didnt get any reason to stay at one place.
+            </p>
+            <p>
                 This is kind of like a experiment ground where i can make small stuff experiment with it and learn new things and others can see it too.
             </p>
         </section>

@@ -1,6 +1,5 @@
 import { useNavigate } from "react-router";
 import { pagePaths } from "../pages/Pages";
-
 export function Problems() {
     const navigate = useNavigate();
     return (
