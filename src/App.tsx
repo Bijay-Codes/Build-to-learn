@@ -7,19 +7,23 @@ import { pagePaths } from "./pages/Pages";
 import { BrowserRouter } from "react-router";
 import { Routes, Route } from "react-router";
 import ActionStateDemo from "./Problems/ReactPractice/UseActionState";
+import { MouseTracker } from "./Problems/Mousetracking/mousetrackingeffect";
 function App() {
   return (
     <BrowserRouter>
-      <Navbar />
-      <section className="p-8">
-        <Routes>
-          <Route path={pagePaths.home} element={<Problems />} />
-          <Route path={pagePaths.intro} element={<Intro />} />
-          <Route path={pagePaths.morseCodeTranslator} element={<MorseCode />} />
-          <Route path={pagePaths.svgpractice} element={<SvgAnim />} />
-          <Route path={pagePaths.reactActionState} element={<ActionStateDemo />} />
-        </Routes>
-      </section>
+      <main className="h-dvh">
+        <Navbar />
+        <section className="p-8">
+          <Routes>
+            <Route path={pagePaths.home} element={<Problems />} />
+            <Route path={pagePaths.intro} element={<Intro />} />
+            <Route path={pagePaths.morseCodeTranslator} element={<MorseCode />} />
+            <Route path={pagePaths.svgpractice} element={<SvgAnim />} />
+            <Route path={pagePaths.reactActionState} element={<ActionStateDemo />} />
+            <Route path={pagePaths.mouseTracker} element={<MouseTracker />} />
+          </Routes>
+        </section>
+      </main>
     </BrowserRouter >
   )
 }

@@ -1,0 +1,9 @@
+.playground:has(.action-button:hover) .ball {
+    background: transparent;
+    outline: 2px solid var(--color-accent-bg);
+}
+
+.action-button:hover {
+    background: radial-gradient(var(--color-primary-bg), var(--color-accent-bg));
+    color: var(--color-primary-fg);
+}

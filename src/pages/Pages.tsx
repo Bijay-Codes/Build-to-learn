@@ -3,6 +3,6 @@ export const pagePaths = {
     intro: '/intro',
     morseCodeTranslator: '/morse-code',
     svgpractice: '/svg-practice',
-    reactActionState: '/action-state'
-
+    reactActionState: '/action-state',
+    mouseTracker: '/mouse-tracker'
 }
