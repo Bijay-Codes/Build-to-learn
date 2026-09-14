@@ -6,6 +6,7 @@ import { Problems } from "./components/RenderProblems";
 import { pagePaths } from "./pages/Pages";
 import { BrowserRouter } from "react-router";
 import { Routes, Route } from "react-router";
+import ActionStateDemo from "./Problems/ReactPractice/UseActionState";
 function App() {
   return (
     <BrowserRouter>
@@ -16,6 +17,7 @@ function App() {
           <Route path={pagePaths.intro} element={<Intro />} />
           <Route path={pagePaths.morseCodeTranslator} element={<MorseCode />} />
           <Route path={pagePaths.svgpractice} element={<SvgAnim />} />
+          <Route path={pagePaths.reactActionState} element={<ActionStateDemo />} />
         </Routes>
       </section>
     </BrowserRouter >

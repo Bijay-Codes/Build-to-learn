@@ -19,6 +19,7 @@ export function Problems() {
                     <h1>SVG practicing</h1>
                     <h2>Practicing to animate SVGs, manupulate them with diffrent methods/approach that come with them to make the sites feel alive</h2>
                 </div>
+                <div onClick={() => navigate(pagePaths.reactActionState)}>Practicing react hooks like useActionState to elevate skills</div>
             </main>
         </section>
     )
