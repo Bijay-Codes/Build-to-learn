@@ -1,4 +1,5 @@
 import { useActionState } from "react";
+import ShoppingCart from "./UseReducer";
 
 interface ActionStateData {
     err: string | null;
@@ -19,7 +20,7 @@ async function formFunction(prev: ActionStateData, formData: FormData | 'clear')
 export default function ActionStateDemo() {
     const [form, modifyTodo, isPending] = useActionState(formFunction, { err: '', todo: [] });
     return (
-        <main className="flex flex-col gap-6 transition-colors duration-300 ease-in-out">
+        <main className="flex flex-col gap-16 transition-colors duration-300 ease-in-out">
             <form action={modifyTodo} className="flex gap-2">
                 <input disabled={isPending}
                     type="text" name="text-inp"
@@ -52,6 +53,8 @@ export default function ActionStateDemo() {
                     {form.todo.map((item: string) => <span className="bg-surface-bg text-surface-fg w-fit min-w-30 p-4">{item}</span>)}
                 </div>
             </div>
+            <hr className="opacity-30" />
+            <ShoppingCart />
         </main>
     );
 }
